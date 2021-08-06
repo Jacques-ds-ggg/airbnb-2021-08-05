@@ -11,17 +11,17 @@ export default function Home({ exploreData, cardsData }) {
     <div className="">
       <Head>
         <title>AirBnB app Markup by Jacques</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon1.ico" />
       </Head>
 
       <Header />
 
       <Banner />
       <main className='max-w-7xl mx-auto px-8 sm:px-16'>
-        <section classname='pt-6'>
+        <section className='pt-6'>
           <h2 className='text-4xl mt-5 font-semibold pb-5'>Explore Nearby</h2>
 {/* Pull some data from a server */}
-          <div classnames='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
             {exploreData?.map((item) => (
               <SmallCard img={item.img} distance={item.distance} location={item.location} />
             ))}
